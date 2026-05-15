@@ -9,5 +9,10 @@ export default {
     prefix: '/api'
   },
   secretToken: process.env.TOKEN_SECRET ?? 'secret_token_default',
-  env: process.env.NODE_ENV
+  env: process.env.NODE_ENV,
+  cloudinary: {
+    cloudName: process.env.CLOUDINARY_CLOUD_NAME,
+    apiKey: process.env.CLOUDINARY_API_KEY,
+    apiSecret: process.env.CLOUDINARY_API_SECRET
+  }
 }
